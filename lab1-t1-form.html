@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form for Professor</title>
+</head>
+
+<body>
+    <header>
+        <h3>Form for Professor</h3>
+    </header>
+    <main>
+        <form>
+            <section>
+                <label for="fullname">Повне ім'я:</label><br>
+                <input type="text" id="fullname" name="fullname" required />
+            </section>
+
+            <section>
+                <fieldset>
+                    <legend>Стать:</legend>
+                    <input type="radio" id="male" name="sex" value="male" required />
+                    <label for="male">Чоловіча</label>
+                    <input type="radio" id="female" name="sex" value="female" />
+                    <label for="female">Жіноча</label>
+                </fieldset>
+            </section>
+
+            <section>
+                <label for="bday">Дата народження:</label><br>
+                <input type="date" id="bday" name="bday" required />
+            </section>
+
+            <section>
+                <label for="emailaddress">Email:</label><br>
+                <input type="email" id="emailaddress" name="emailaddress" required />
+            </section>
+
+            <section>
+                <label for="phone">Телефон:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required /><br>
+                <small>Формат: 012-345-6789</small>
+            </section>
+
+            <section>
+                <label for="prefcol">Бажаний колір фону:</label><br>
+                <input type="color" id="prefcol" name="prefcol" required />
+            </section>
+
+            <section>
+                <label for="country">Країна:</label><br>
+                <input type="text" id="country" name="country" required />
+            </section>
+
+            <section>
+                <label for="city">Місто:</label><br>
+                <input type="text" id="city" name="city" required />
+            </section>
+
+            <section>
+                <label for="comments">Коментар:</label><br>
+                <textarea name="comments" id="comments"></textarea>
+            </section>
+
+            <section>
+                <input type="submit" />
+                <input type="reset" />
+            </section>
+        </form>
+    </main>
+</body>
+</html>
+
+
+<!--<header> -- to encapsulate the heading of the form
+<main> -- to wrap the main content of the page
+<section> -- to group related form elements together
+<fieldset> and <legend> -- to group and provide a caption for radio -->
